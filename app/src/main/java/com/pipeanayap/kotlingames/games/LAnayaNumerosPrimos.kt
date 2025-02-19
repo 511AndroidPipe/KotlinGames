@@ -1,13 +1,11 @@
 package com.pipeanayap.kotlingames.games
 
 fun main() {
-
-
     println("Ingresa un numero entero")
     val numeroInicial = readlnOrNull()?.toIntOrNull()
 
-    if (numeroInicial == null) {
-        println("Ingresa un numero valido")
+    if (numeroInicial == null || numeroInicial <= 2) {
+        println("Ingresa un numero valido o mayor a 2")
     }
 
     var esPrimo = true
